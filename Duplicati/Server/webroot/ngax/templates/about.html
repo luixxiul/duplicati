@@ -39,8 +39,29 @@
         </div>
 
         <div class="about-general__block">
-            <div class="prewrapped-text" ng-show="Acknowledgements">{{Acknowledgements}}</div>
-            <div class="prewrapped-text" ng-hide="Acknowledgements" translate="">Loading …</div>
+            <div class="acknowledgements">
+                <div class="acknowledgements__block" translate translate-params-appname="brandingService.appName">
+                    <p>We would like to thank all contributors who made {{appname}} what it is today.</p>
+                    <ul>
+                        <li>These are the contributors to Duplicati 1.x that got it all started.</li>
+                        <li>These are the people who help others to get their backups up and running.</li>
+                        <li>These are the testers and translators.</li>
+                        <li>These are the people who give us hints how to improve {{appname}} further.</li>
+                        <li>These are the people who just say "thank you".</li>
+                    </ul>
+                    <p>You are the reason why this project gets ahead. You do not only contribute to the software but also keep us involved and motivated. Thank you!</p>
+                </div>
+
+                <div class="acknowledgements__block" translate>
+                    <p>Due to their recent contributions to Duplicati 2.0 we would like to thank some people in particular:</p>
+                    <ul>
+                        <li>Stefan Lück (@footstark) for providing great performance optimizations to Duplicati 2.0</li>
+                        <li>Tobias Käs (@weltkante) for his C# library that implements LZMA2 and 7z</li>
+                        <li>Alexander Franzelin (@AlexFRAN) for the design of the Duplicati UI and the website</li>
+                        <li>@agrajaghh for building localization support and improving the user interface</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 

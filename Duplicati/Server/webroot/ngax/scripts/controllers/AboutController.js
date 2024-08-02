@@ -18,10 +18,6 @@ backupApp.controller('AboutController', function($scope, $location, BrandingServ
         'New BSD': 'http://opensource.org/licenses/BSD-3-Clause'
     };
 
-    AppService.get('/acknowledgements').then(function(resp) {
-        $scope.Acknowledgements = resp.data.Acknowledgements;
-    });
-
     $scope.$watch('Page', function() {
         if ($scope.Page == 'changelog' && $scope.ChangeLog == null) {
             AppService.get('/changelog?from-update=false').then(function(resp) {
