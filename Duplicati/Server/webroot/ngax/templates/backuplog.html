@@ -18,10 +18,10 @@
                 <div ng-show="expanded && !item.Result" class="prewrapped-text exceptiontext">{{item.Message}}</div>
             </li>
         </ul>
-        <div ng-show="GeneralData != null &amp;&amp; !GeneralDataComplete" class="button" ng-click="LoadMoreGeneralData()">
+        <button ng-show="GeneralData != null &amp;&amp; !GeneralDataComplete" class="button" ng-click="LoadMoreGeneralData()">
             <span ng-show="LoadingData" translate>Loading …</span>
             <span ng-hide="LoadingData" translate>Load older data</span>
-        </div>
+        </button>
     </div>
 
     <div ng-show="Page == 'remote'">
@@ -36,9 +36,9 @@
                 <div ng-show="expanded" class="prewrapped-text exceptiontext">{{item.Data}}</div>
             </li>
         </ul>
-        <div ng-show="RemoteData != null &amp;&amp; !RemoteDataComplete" class="button" ng-click="LoadMoreRemoteData()">
+        <button ng-show="RemoteData != null &amp;&amp; !RemoteDataComplete" class="button" ng-click="LoadMoreRemoteData()">
             <span ng-show="LoadingData" translate>Loading …</span>
             <span ng-hide="LoadingData" translate>Load older data</span>
-        </div>
+        </button>
     </div>
 </div>
