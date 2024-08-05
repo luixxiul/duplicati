@@ -125,6 +125,10 @@ a {
     flex-wrap: wrap;
     flex-direction: row-reverse; /* TODO: remove. This is required for now as elements in .buttons have been placed with float: right. */
     gap: 10px;
+
+    &:has(> button) {
+        flex-direction: unset; /* TODO: remove */
+    }
 }
 
 .button {
