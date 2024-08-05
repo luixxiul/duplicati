@@ -51,6 +51,7 @@ a {
 
 button {
     border: none; /* Remove default border */
+    padding: 0; /* Remove default values */
 }
 
 ul {
@@ -118,13 +119,19 @@ a {
     }
 }
 
+.buttons {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; /* TODO: remove. This is required for now as elements in .buttons have been placed with float: right. */
+    gap: 10px;
+}
+
 .button {
     display: block;
     background: @lColor;
     color: white !important;
     padding: 5px 15px;
-    float: right;
-    margin-left: 10px;
     cursor: pointer;
     width: auto;
     border: none;
@@ -607,16 +614,11 @@ ul.notification {
 
 div.captcha {
     .details {
-        padding-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px auto 0px;
         width: 180px;
 
         .button {
             margin-top: 5px; /* Magic number */
-
-            float: unset;
-            margin-left: unset;
         }
     }
     .code {
@@ -2102,9 +2104,6 @@ div.modal-dialog {
 
 div.modal-dialog {
     .content.buttons {
-        ul {
-            float: right;
-        }
         /* tooltipped css taken from: https://github.com/primer/primer-tooltips and https://sachinchoolur.github.io/ngclipboard/ */
         .tooltipped {
             position: relative

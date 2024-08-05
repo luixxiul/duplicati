@@ -278,10 +278,8 @@
                 </div>
                 <div class="content" ng-show="state.CurrentItem.htmltemplate" ng-include="state.CurrentItem.htmltemplate"></div>
                 <div class="content buttons">
-                    <ul>
-                        <li ng-show="state.CurrentItem.buttonTemplate" ng-include="state.CurrentItem.buttonTemplate" style="display: inline-block"></li>
-                        <li ng-repeat="btn in state.CurrentItem.buttons track by $index" style="display: inline-block"><a href class="button" ng-click="onButtonClick($index)">{{btn}}</a></li>
-                    </ul>
+                    <button ng-show="state.CurrentItem.buttonTemplate" ng-include="state.CurrentItem.buttonTemplate" style="display: inline-block"></button>
+                    <button ng-repeat="btn in state.CurrentItem.buttons track by $index" style="display: inline-block"><a href class="button" ng-click="onButtonClick($index)">{{btn}}</a></button>
                 </div>
             </div>
         </div>
