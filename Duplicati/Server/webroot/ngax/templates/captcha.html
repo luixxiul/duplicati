@@ -4,7 +4,7 @@
 		<div class="details">
 			<img src="{{entry.imageurl}}" />
 			<input type="text" ng-model="entry.answer" />
-			<input type="button" value="{{'Reload' | translate}}" ng-click="reload()" />
+			<input class="button" type="button" value="{{'Reload' | translate}}" ng-click="reload()" />
 		</div>
 
 		<div class="centered-text" ng-show="entry.verifying" translate>Checking …</div>
