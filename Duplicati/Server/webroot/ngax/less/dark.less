@@ -1,13 +1,13 @@
 @import 'variables.less';
 @import 'base.less';
 
-@tColor: #B0B0B0; // Text-color
+var(--text-color): #B0B0B0; // Text-color
 @hColor: #609301; // Heading-color
 @lColor: #2A89C0; // Link-color
 
 body {
     background-color: #1a1a1a !important;
-    color: @tColor;
+    color: var(--text-color);
 }
 
 body .footer {
@@ -23,7 +23,7 @@ body #mainmenu {
 }
 
 body .header a.hover, body .header a.active {
-    color: lighten(@tColor, 25%);
+    color: lighten(var(--text-color), 25%);
 }
 
 body .container .header .state {
@@ -63,10 +63,10 @@ body .step3 source-folder-picker, body #folder_path_picker, body #restore_file_p
     background-color: #ffffff;
 }
 .restorewizard, .addwizard form.styled div.subtext {
-            color: darken(@tColor, 15%);
+            color: darken(var(--text-color), 15%);
 }
 
 body form.styled input, body form.styled textarea, body form.styled select, body form.styled .input.select select {
-    color: @tColor;
+    color: var(--text-color);
     background-color: #1a1a1a;
 }
