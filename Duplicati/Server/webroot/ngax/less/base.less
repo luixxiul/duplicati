@@ -34,7 +34,7 @@ body {
 h1,
 h2 {
     font-weight: 300;
-    color: @hColor;
+    color: var(--heading-color);
 }
 
 h1 {
@@ -190,7 +190,7 @@ wait-area {
     }
 
     .title {
-        color: darken(@hColor, 10%);
+        color: darken(var(--heading-color), 10%);
         font-weight: bold;
         font-size: 30px;
     }
@@ -199,7 +199,7 @@ wait-area {
         display: block;
 
         .key {
-            color: @hColor;
+            color: var(--heading-color);
             font-weight: bold;
         }
 
@@ -650,11 +650,11 @@ body {
 
             .state {
                 float: left;
-                color: darken(@hColor, 10%);
+                color: darken(var(--heading-color), 10%);
                 width: 595px;
                 padding: 13px 15px;
                 margin: 10px 20px;
-                border: 1px darken(@hColor, 10%) solid;
+                border: 1px darken(var(--heading-color), 10%) solid;
                 font-weight: 300;
                 font-size: 18px;
                 overflow: hidden;
@@ -739,7 +739,7 @@ body {
                     top: 0px;
                     bottom: 0px;
                     left: 0px;
-                    background: fade(@hColor, 25%);
+                    background: fade(var(--heading-color), 25%);
                     z-index: 5;
                 }
 

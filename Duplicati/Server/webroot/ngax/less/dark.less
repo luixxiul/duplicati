@@ -2,7 +2,7 @@
 @import 'base.less';
 
 var(--text-color): #B0B0B0; // Text-color
-@hColor: #609301; // Heading-color
+var(--heading-color): #609301; // Heading-color
 @lColor: #2A89C0; // Link-color
 
 body {
@@ -27,8 +27,8 @@ body .header a.hover, body .header a.active {
 }
 
 body .container .header .state {
-    color: lighten(@hColor, 10%);
-    border: 1px lighten(@hColor, 10%) solid;
+    color: lighten(var(--heading-color), 10%);
+    border: 1px lighten(var(--heading-color), 10%) solid;
 }
 
 body .state {
