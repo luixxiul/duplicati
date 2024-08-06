@@ -116,7 +116,7 @@ a {
 
 .button {
     display: block;
-    background: @lColor;
+    background: var(--link-color);
     color: white !important;
     padding: 5px 15px;
     float: right;
@@ -131,7 +131,7 @@ a {
 }
 
 .button:hover {
-    background: darken(@lColor, 10%);
+    background: darken(var(--link-color), 10%);
 }
 
 .step3 source-folder-picker, #folder_path_picker, #restore_file_picker {
@@ -279,15 +279,15 @@ ul.tabs {
     > li {
         display: inline;
         margin-right: 10px;
-        border: 1px solid @lColor;
+        border: 1px solid var(--link-color);
         padding: 5px;
 
         &.active {
-            background-color: @lColor;
+            background-color: var(--link-color);
             color: white;
 
             > a {
-                background-color: @lColor;
+                background-color: var(--link-color);
                 color: white;
             }
 
@@ -345,9 +345,9 @@ ul.tabs {
     .button {
         text-align: center;
         margin-right: 10px;
-        border: 1px solid @lColor;
+        border: 1px solid var(--link-color);
         padding: 5px;
-        background-color: @lColor;
+        background-color: var(--link-color);
         color: white;
         cursor: pointer;
     }
@@ -384,8 +384,8 @@ ul.notification {
 
 .notification {
     .title {
-        border: 1px solid @lColor;
-        background-color: @lColor;
+        border: 1px solid var(--link-color);
+        background-color: var(--link-color);
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         border-bottom-left-radius: 0px;
@@ -402,7 +402,7 @@ ul.notification {
 
     .content {
         background-color: white;
-        border: 1px solid @lColor;
+        border: 1px solid var(--link-color);
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 5px;
@@ -628,7 +628,7 @@ body {
             z-index: 100;
 
             a {
-                color: @lColor;
+                color: var(--link-color);
             }
 
             a:hover,
@@ -849,7 +849,7 @@ body {
             padding-bottom: 70px;
 
             a {
-                color: @lColor;
+                color: var(--link-color);
             }
 
             .mainmenu {
@@ -969,7 +969,7 @@ body {
                         }
 
                         > a.home.active {
-                            background: lighten(@lColor, 15%) url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
+                            background: lighten(var(--link-color), 15%) url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -982,7 +982,7 @@ body {
                         }
 
                         > a.add.active {
-                            background: lighten(@lColor, 15%) url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
+                            background: lighten(var(--link-color), 15%) url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -995,7 +995,7 @@ body {
                         }
 
                         > a.restore.active {
-                            background: lighten(@lColor, 15%) url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
+                            background: lighten(var(--link-color), 15%) url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1008,7 +1008,7 @@ body {
                         }
 
                         > a.resume.active {
-                            background: lighten(@lColor, 15%) url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
+                            background: lighten(var(--link-color), 15%) url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1021,7 +1021,7 @@ body {
                         }
 
                         > a.settings.active {
-                            background: lighten(@lColor, 15%) url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
+                            background: lighten(var(--link-color), 15%) url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1034,7 +1034,7 @@ body {
                         }
 
                         > a.about.active {
-                            background: lighten(@lColor, 15%) url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
+                            background: lighten(var(--link-color), 15%) url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1047,7 +1047,7 @@ body {
                         }
 
                         > a.add:hover {
-                            background: @lColor url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1060,7 +1060,7 @@ body {
                         }
 
                         > a.restore:hover {
-                            background: @lColor url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1073,7 +1073,7 @@ body {
                         }
 
                         > a.resume:hover {
-                            background: @lColor url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1086,7 +1086,7 @@ body {
                         }
 
                         > a.settings:hover {
-                            background: @lColor url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1099,7 +1099,7 @@ body {
                         }
 
                         > a.logout:hover {
-                            background: @lColor url('../img/mainmenu/over/logout.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/logout.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1112,7 +1112,7 @@ body {
                         }
 
                         > a.home:hover {
-                            background: @lColor url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1125,7 +1125,7 @@ body {
                         }
 
                         > a.about:hover {
-                            background: @lColor url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
+                            background: var(--link-color) url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
                             background-size: 27px 26px;
 
                             @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.25dppx) {
@@ -1162,7 +1162,7 @@ body {
                 li {
 
                     a {
-                        color: @lColor;
+                        color: var(--link-color);
                         font-size: 15px;
                         font-weight: 400;
                         padding: 0;
@@ -1176,7 +1176,7 @@ body {
                     }
 
                     a:hover {
-                        background: @lColor;
+                        background: var(--link-color);
                         color: white;
                     }
                 }
@@ -1264,7 +1264,7 @@ body {
                             p {
                                 display: inline;
                                 margin-right: 10px;
-                                color: @lColor;
+                                color: var(--link-color);
                                 cursor: pointer;
                             }
 
@@ -1280,7 +1280,7 @@ body {
 
                             dt.active,
                             dt:hover {
-                                //background: @lColor;
+                                //background: var(--link-color);
                                 //color: white;
                             }
 
@@ -1330,16 +1330,16 @@ body {
                         }
 
                         .step.active {
-                            color: @lColor;
+                            color: var(--link-color);
 
                             span {
-                                border: 4px @lColor solid;
-                                background: @lColor;
+                                border: 4px var(--link-color) solid;
+                                background: var(--link-color);
                                 color: white;
                             }
 
                             h2 {
-                                color: @lColor;
+                                color: var(--link-color);
                             }
                         }
 
@@ -1365,7 +1365,7 @@ body {
                         }
 
                         li.active {
-                            color: @lColor;
+                            color: var(--link-color);
                         }
                     }
 
@@ -1609,7 +1609,7 @@ body {
                                     }
 
                                     li.strength.good {
-                                        color: @lColor;
+                                        color: var(--link-color);
                                     }
                                 }
                             }
@@ -1908,7 +1908,7 @@ body {
             width: 100%;
 
             a {
-                color: @lColor;
+                color: var(--link-color);
             }
 
             .about-footer {
@@ -1969,7 +1969,7 @@ body {
         max-width: 400px;
 
         a {
-            color: @lColor;
+            color: var(--link-color);
             font-size: 20px;
             line-height: 40px;
         }
@@ -1998,7 +1998,7 @@ span.info {
     font-size: 10px;
     font-weight: 500;
     display: inline-block;
-    background: @lColor;
+    background: var(--link-color);
     border-radius: 50%;
     width: 15px;
     height: 15px;
@@ -2623,7 +2623,7 @@ div.modal-dialog {
                 .menubutton.active {
                     background-image: url('../img/menu_active.png');
                     background-size: 39px 39px;
-                    color: @lColor;
+                    color: var(--link-color);
 
                     @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 192dpi), (min-resolution: 1.25dppx) {
                         background-image: url('../img/menu_active_2x.png');

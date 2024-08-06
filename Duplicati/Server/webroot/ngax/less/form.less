@@ -68,12 +68,12 @@ form.styled {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             color: white;
-            background: @lColor;
+            background: var(--link-color);
             line-height: 37px;
         }
 
         a.browse:hover {
-            background: darken(@lColor, 20%);
+            background: darken(var(--link-color), 20%);
         }
     }
 
@@ -103,7 +103,7 @@ form.styled {
         input,
         a {
             display: block;
-            background: @lColor;
+            background: var(--link-color);
             color: white !important;
             padding: 5px 15px;
             float: right;
@@ -123,7 +123,7 @@ form.styled {
 
         input:hover,
         a:hover {
-            background: darken(@lColor, 25%);
+            background: darken(var(--link-color), 25%);
         }
     }
 }
