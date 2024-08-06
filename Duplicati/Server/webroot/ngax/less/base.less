@@ -180,7 +180,7 @@ wait-area {
 
     div .horizontal-rule {
         width: 100%;
-        border-bottom: 1px solid @border;
+        border-bottom: 1px solid var(--border);
         margin: 5px 0 5px 0;
     }
 
@@ -214,7 +214,7 @@ wait-area {
     }
 
     .one {
-        border-right: 1px solid @border;
+        border-right: 1px solid var(--border);
         grid-column: 1;
         grid-row: 1;
     }
@@ -226,7 +226,7 @@ wait-area {
 
     .wide {
         grid-column: span 2;
-        border-top: 1px solid @border;
+        border-top: 1px solid var(--border);
         padding-top: 10px;
     }
 
@@ -618,7 +618,7 @@ body {
 
         .header {
             line-height: 70px;
-            background: @headerBg;
+            background: var(--headerBg);
             overflow: hidden;
             height: 70px;
             position: fixed;
@@ -1141,7 +1141,7 @@ body {
                     li.hr-top {
                         padding-top: 25px;
                         margin-top: 25px;
-                        border-top: 1px @headerBg solid;
+                        border-top: 1px var(--headerBg) solid;
                     }
                 }
             }
@@ -1154,7 +1154,7 @@ body {
                 display: none;
                 position: absolute;
                 background: white;
-                border: 1px @headerBg solid;
+                border: 1px var(--headerBg) solid;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 z-index: 200;
                 padding: 5px;
@@ -1868,7 +1868,7 @@ body {
                     ul.entries {
                         li {
                             padding: 10px 0 10px 0;
-                            border-bottom: 1px solid @border;
+                            border-bottom: 1px solid var(--border);
                         }
                     }
 
@@ -1899,7 +1899,7 @@ body {
         }
 
         .footer {
-            background: @headerBg;
+            background: var(--headerBg);
             min-height: 70px;
             line-height: 70px;
             overflow: hidden;
