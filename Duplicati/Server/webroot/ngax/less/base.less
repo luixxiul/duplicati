@@ -3,6 +3,10 @@
 @import 'form.less';
 @import 'font-awesome/font-awesome.less';
 
+:root {
+    --tabs__item-padding: 5px; /* TODO: specify appopriate specificity */
+}
+
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .flexbox() {
     display: -webkit-box;
@@ -295,7 +299,7 @@ ul.tabs {
         display: inline;
         margin-right: 10px;
         border: 1px solid @lColor;
-        padding: 5px;
+        padding: var(--tabs__item-padding);
 
         &.active {
             background-color: @lColor;
@@ -359,7 +363,7 @@ ul.tabs {
 
     .button {
         margin-inline: auto 10px;
-        padding: 5px;
+        padding: var(--tabs__item-padding);
     }
 }
 
