@@ -70,8 +70,8 @@ textarea {
 
 .external-link-image {
     display: inline-block;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-inline-start: 8px;
+    margin-inline-end: 8px;
     height: 16px;
     width: 16px;
     background: url('../img/external-link-hover.png');
@@ -123,8 +123,8 @@ a {
     background: @lColor;
     color: white !important;
     padding: 5px 15px;
-    float: right;
-    margin-left: 10px;
+    float: inline-end;
+    margin-inline-start: 10px;
     cursor: pointer;
     width: auto;
     border: none;
@@ -247,7 +247,7 @@ wait-area {
             margin-bottom: 6px;
 
             a {
-                margin-left: auto;
+                margin-inline-start: auto;
             }
         }
 
@@ -282,7 +282,7 @@ ul.tabs {
 
     > li {
         display: inline;
-        margin-right: 10px;
+        margin-inline-end: 10px;
         border: 1px solid @lColor;
         padding: 5px;
 
@@ -315,7 +315,7 @@ ul.tabs {
     > ul {
         list-style: initial;
         margin: 10px;
-        margin-left: 20px;
+        margin-inline-start: 20px;
     }
 
     li {
@@ -331,7 +331,7 @@ ul.tabs {
     ul.entries {
         list-style: initial;
         margin: 10px;
-        margin-left: 20px;
+        margin-inline-start: 20px;
     }
 
     .entries {
@@ -348,7 +348,7 @@ ul.tabs {
 
     .button {
         text-align: center;
-        margin-right: 10px;
+        margin-inline-end: 10px;
         border: 1px solid @lColor;
         padding: 5px;
         background-color: @lColor;
@@ -374,7 +374,7 @@ ul.tabs {
 }
 
 .themelink {
-    margin-left: 20px;
+    margin-inline-start: 20px;
 }
 
 ul.notification {
@@ -395,8 +395,8 @@ ul.notification {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         padding: 2px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
         font-weight: bold;
         color: lightgray;
         width: 100%;
@@ -412,8 +412,8 @@ ul.notification {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         padding: 2px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
         width: 100%;
     }
 
@@ -428,7 +428,7 @@ ul.notification {
     }
 
     .clear {
-        clear: right;
+        clear: inline-end;
         height: 1px;
     }
 
@@ -475,8 +475,8 @@ ul.notification {
 }
 
 .advanced-toggle {
-    float: right;
-    margin-right: 25px;
+    float: inline-end;
+    margin-inline-end: 25px;
     line-height: 37px;
 }
 
@@ -520,7 +520,7 @@ ul.notification {
         --margin-block: 10px; /* Magic number */
 
         margin-top: var(--margin-block);
-        margin-left: 190px;
+        margin-inline-start: 190px;
         clear: both;
         font-style: italic;
         white-space: pre-wrap;
@@ -547,17 +547,17 @@ ul.notification {
     img.mainlogo {
         height: 64px;
         width: 64px;
-        float: left;
-        padding-right: 8px;
+        float: inline-start;
+        padding-inline-end: 8px;
         padding-top: 2px;
     }
 
     div.logotext {
-        float: left;
+        float: inline-start;
     }
 
     a {
-        float: left;
+        float: inline-start;
         display: block;
         line-height: normal;
     }
@@ -565,7 +565,7 @@ ul.notification {
     div.build-suffix {
         clear: both;
         display: inline;
-        float: left;
+        float: inline-start;
         font-size: 16px;
         line-height: 16px;
     }
@@ -574,9 +574,9 @@ ul.notification {
         font-size: 16px;
         margin: 0px;
         line-height: 16px;
-        float: left;
+        float: inline-start;
         padding: 0px;
-        margin-left: 5px;
+        margin-inline-start: 5px;
     }
 }
 
@@ -608,8 +608,8 @@ ul.notification {
 div.captcha {
     .details {
         padding-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
         width: 180px;
     }
     .code {
@@ -665,17 +665,17 @@ body {
             .logo {
                 font-size: 30px;
                 font-weight: 700;
-                float: left;
-                padding-left: 40px;
+                float: inline-start;
+                padding-inline-start: 40px;
             }
 
             .statepadding {
-                padding-right: 90px;
-                margin-left: 320px;
+                padding-inline-end: 90px;
+                margin-inline-start: 320px;
             }
 
             .state {
-                float: left;
+                float: inline-start;
                 color: darken(@hColor, 10%);
                 width: 595px;
                 padding: 13px 15px;
@@ -693,7 +693,7 @@ body {
 
                 strong {
                     display: inline;
-                    margin-right: 10px;
+                    margin-inline-end: 10px;
                 }
 
                 span {
@@ -708,7 +708,7 @@ body {
                 .content {
                     position: relative;
                     z-index: 10;
-                    margin-right: 40px;
+                    margin-inline-end: 40px;
                     display: block;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -781,12 +781,12 @@ body {
                 line-height: normal;
                 margin: 10px 0px;
                 padding: 13px 0px;
-                float: left;
+                float: inline-start;
             }
 
             .action-icons-small {
                 display: none;
-                float: right;
+                float: inline-end;
                 margin-top: 21px;
                 line-height: normal;
             }
@@ -843,8 +843,8 @@ body {
 
 
             .about-header {
-                float: right;
-                padding-right: 20px;
+                float: inline-end;
+                padding-inline-end: 20px;
                 overflow: hidden;
 
                 ul {
@@ -852,8 +852,8 @@ body {
                     list-style: none;
 
                     li {
-                        float: right;
-                        padding-right: 20px;
+                        float: inline-end;
+                        padding-inline-end: 20px;
                     }
                 }
             }
@@ -872,8 +872,8 @@ body {
 
             .mainmenu {
                 width: 260px;
-                padding-left: 40px;
-                float: left;
+                padding-inline-start: 40px;
+                float: inline-start;
                 position: fixed;
 
                 > ul {
@@ -1188,7 +1188,7 @@ body {
                         min-width: 200px;
                         padding: 4px 10px;
                         white-space: nowrap;
-                        padding-left: 45px;
+                        padding-inline-start: 45px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
@@ -1205,8 +1205,8 @@ body {
             }
 
             .content {
-                float: left;
-                padding-left: 350px;
+                float: inline-start;
+                padding-inline-start: 350px;
                 padding-bottom: 50px;
                 max-width: 70%;
 
@@ -1252,19 +1252,19 @@ body {
                             &.action-link {
                                 font-size: 14px;
                                 background: none;
-                                padding-left: 0px;
+                                padding-inline-start: 0px;
                             }
                         }
 
                         dl {
-                            padding-left: 55px;
+                            padding-inline-start: 55px;
                             overflow: hidden;
                             font-size: 14px;
 
                             dt,
                             dd {
                                 display: block;
-                                float: left;
+                                float: inline-start;
                             }
 
                             dt {
@@ -1274,21 +1274,21 @@ body {
                             }
 
                             dd {
-                                margin-left: 10px;
+                                margin-inline-start: 10px;
                             }
                         }
 
                         dl.taskmenu {
                             p {
                                 display: inline;
-                                margin-right: 10px;
+                                margin-inline-end: 10px;
                                 color: @lColor;
                                 cursor: pointer;
                             }
 
                             dt {
-                                float: left;
-                                margin-right: 10px;
+                                float: inline-start;
+                                margin-inline-end: 10px;
                                 margin-bottom: 0;
                                 padding: 5px 8px;
                                 color: @tColor;
@@ -1322,20 +1322,20 @@ body {
                     --step-width: calc(var(--legends-width) / var(--legends-steps));
 
                     .steps {
-                        margin-left: calc(calc(calc(var(--step-width) - var(--circle-width)) / 2) + var(--legends-padding-left));
+                        margin-inline-start: calc(calc(calc(var(--step-width) - var(--circle-width)) / 2) + var(--legends-padding-left));
 
                         .step {
-                            padding-left: calc(var(--step-width) - var(--circle-width));
-                            padding-right: 0;
+                            padding-inline-start: calc(var(--step-width) - var(--circle-width));
+                            padding-inline-end: 0;
 
                             &:first-child {
-                                padding-left: unset;
+                                padding-inline-start: unset;
                             }
                         }
                     }
 
                     .steps-legend {
-                        padding-left: var(--legends-padding-left);
+                        padding-inline-start: var(--legends-padding-left);
 
                         li {
                             width: var(--step-width);
@@ -1354,7 +1354,7 @@ body {
                         --legends-steps: 4;
 
                         .steps-legend {
-                            padding-left: 20px; /* Align "Backup location" */
+                            padding-inline-start: 20px; /* Align "Backup location" */
                         }
                     }
                 }
@@ -1366,7 +1366,7 @@ body {
                         overflow: hidden;
 
                         .step {
-                            float: left;
+                            float: inline-start;
                             background: url('../img/steps/line-out.png') no-repeat top left;
                             background-size: 485px 24px;
                             color: #c7e5f6;
@@ -1418,7 +1418,7 @@ body {
                             color: #c7e5f6;
                             font-size: 18px;
                             text-align: center;
-                            float: left;
+                            float: inline-start;
                             padding-top: 10px;
                             cursor: pointer;
                         }
@@ -1429,7 +1429,7 @@ body {
                     }
 
                     .steps-boxes {
-                        padding-left: 40px;
+                        padding-inline-start: 40px;
 
                         .step {
                             display: none;
@@ -1442,8 +1442,8 @@ body {
                         .box.browser {
                             .checklinks {
                                 a {
-                                    float: left;
-                                    margin-left: 20px;
+                                    float: inline-start;
+                                    margin-inline-start: 20px;
                                     color: @tColor;
 
                                     i {
@@ -1467,7 +1467,7 @@ body {
                                 }
 
                                 a:first-child {
-                                    margin-left: 0;
+                                    margin-inline-start: 0;
                                 }
                             }
 
@@ -1515,7 +1515,7 @@ body {
 
                                     select {
                                         width: 200px;
-                                        margin-right: 5px;
+                                        margin-inline-end: 5px;
                                         height: 36px;
                                         line-height: 36px;
                                     }
@@ -1562,7 +1562,7 @@ body {
 
                             .hint, .retention-options {
                                 clear: both;
-                                margin-left: 190px;
+                                margin-inline-start: 190px;
                                 margin-top: 50px;
                                 font-style: italic;
                             }
@@ -1610,7 +1610,7 @@ body {
                                 line-height: normal;
                                 margin-top: 16px;
                                 clear: both;
-                                float: left;
+                                float: inline-start;
 
                                 i.fa {
                                     border: 2px solid;
@@ -1639,15 +1639,15 @@ body {
                         .input.password {
                             .tools {
                                 clear: both;
-                                padding-left: 190px;
+                                padding-inline-start: 190px;
                                 padding-top: 10px;
 
                                 ul {
                                     overflow: hidden;
 
                                     li {
-                                        float: left;
-                                        padding-right: 7px;
+                                        float: inline-start;
+                                        padding-inline-end: 7px;
                                     }
 
                                     li.strength.useless {
@@ -1669,7 +1669,7 @@ body {
                             input,
                             select {
                                 width: auto;
-                                margin-right: 5px;
+                                margin-inline-end: 5px;
                             }
 
                             /* TODO: investigate if this block can be merged with one on form.less */
@@ -1708,7 +1708,7 @@ body {
                                 display: inline-block;
                                 float: none;
                                 width: auto;
-                                padding-right: 10px;
+                                padding-inline-end: 10px;
                             }
 
                             input {
@@ -1767,7 +1767,7 @@ body {
 
                         #generic_port {
                             width: 50px;
-                            margin-left: 10px; /* Magic number */
+                            margin-inline-start: 10px; /* Magic number */
                         }
                     }
                 }
@@ -1780,7 +1780,7 @@ body {
                     }
 
                     .contextmenu_container {
-                        float: right;
+                        float: inline-end;
                     }
 
                     .contextmenu {
@@ -1815,7 +1815,7 @@ body {
 
                         select {
                             width: auto;
-                            margin-right: 5px;
+                            margin-inline-end: 5px;
                         }
 
                         label {
@@ -1878,39 +1878,39 @@ body {
             }
 
             .about-footer {
-                float: left;
+                float: inline-start;
                 overflow: hidden;
-                padding-right: 20px;
+                padding-inline-end: 20px;
                 display: none;
 
                 span {
                     display: block;
-                    float: left;
-                    padding-left: 20px;
+                    float: inline-start;
+                    padding-inline-start: 20px;
                 }
 
                 ul {
-                    float: left;
+                    float: inline-start;
                 }
 
                 li {
-                    float: left;
-                    padding-left: 20px;
+                    float: inline-start;
+                    padding-inline-start: 20px;
                 }
             }
 
             .social {
-                float: right;
+                float: inline-end;
 
                 ul {
                     overflow: hidden;
-                    float: right;
-                    padding-left: 20px;
-                    padding-right: 10px;
+                    float: inline-end;
+                    padding-inline-start: 20px;
+                    padding-inline-end: 10px;
 
                     li {
-                        float: right;
-                        margin-right: 10px;
+                        float: inline-end;
+                        margin-inline-end: 10px;
                         padding-top: 5px;
 
                         img {
@@ -1925,8 +1925,8 @@ body {
             }
 
             .themelink {
-                float: right;
-                padding-right: 20px;
+                float: inline-end;
+                padding-inline-end: 20px;
             }
         }
     }
@@ -1971,7 +1971,7 @@ span.info {
     vertical-align: super;
     color: white;
     line-height: 15px;
-    margin-left: 5px;
+    margin-inline-start: 5px;
     text-align: center;
 }
 
@@ -2090,7 +2090,7 @@ div.modal-dialog {
 div.modal-dialog {
     .content.buttons {
         ul {
-            float: right;
+            float: inline-end;
         }
         /* tooltipped css taken from: https://github.com/primer/primer-tooltips and https://sachinchoolur.github.io/ngclipboard/ */
         .tooltipped {
@@ -2138,7 +2138,7 @@ div.modal-dialog {
         .tooltipped-w:after {
             right: 100%;
             bottom: 50%;
-            margin-right: 5px;
+            margin-inline-end: 5px;
             -webkit-transform: translateY(50%);
             -ms-transform: translateY(50%);
             transform: translateY(50%)
@@ -2168,13 +2168,13 @@ div.modal-dialog {
     form.styled {
         ul {
             margin: 20px;
-            margin-left: 0px;
+            margin-inline-start: 0px;
         }
 
         input[type="radio"] {
             width: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            margin-inline-start: 5px;
+            margin-inline-end: 5px;
         }
 
         label {
@@ -2184,7 +2184,7 @@ div.modal-dialog {
 
         div.subtext {
             clear: both;
-            margin-left: 30px;
+            margin-inline-start: 30px;
             padding-top: 5px;
             color: lighten(@tColor, 15%);
         }
@@ -2200,7 +2200,7 @@ div.modal-dialog {
             input {
                 height: auto;
                 margin-top: 8px;
-                margin-right: 8px;
+                margin-inline-end: 8px;
                 width: auto;
             }
         }
@@ -2249,7 +2249,7 @@ div.modal-dialog {
     }
 
     .progress-bar {
-        float: left;
+        float: inline-start;
         width: 0;
         height: 100%;
         font-size: 12px;
@@ -2276,11 +2276,11 @@ div.modal-dialog {
 
 .tree-view {
     list-style-type: none;
-    margin-left: 10px;
+    margin-inline-start: 10px;
     padding-bottom: 5px;
 
     ul {
-        margin-left: 16px;
+        margin-inline-start: 16px;
     }
 
     span {
@@ -2504,7 +2504,7 @@ div.modal-dialog {
 
         select {
             width: auto;
-            margin-right: 5px;
+            margin-inline-end: 5px;
         }
 
         input {
@@ -2539,15 +2539,15 @@ div.modal-dialog {
                 height: 140px;
 
                 .statepadding {
-                    padding-right: 90px;
-                    margin-left: 0px;
+                    padding-inline-end: 90px;
+                    margin-inline-start: 0px;
                 }
 
                 .state {
                     width: 100%;
                     margin: 10px 40px;
-                    clear: left;
-                    float: left;
+                    clear: inline-start;
+                    float: inline-start;
                 }
 
                 .action-icons {
@@ -2562,20 +2562,20 @@ div.modal-dialog {
                 .menubutton {
                     display: block;
                     font-size: 18px;
-                    padding-right: 50px;
+                    padding-inline-end: 50px;
                     margin-top: 5px;
-                    margin-right: 15px;
+                    margin-inline-end: 15px;
                     background: url('../img/menu.png') no-repeat right top;
                     background-size: 39px 39px;
                     position: relative;
                     height: 40px;
                     line-height: 40px;
                     color: @tColor;
-                    float: right;
+                    float: inline-end;
                     top: 10px;
-                    padding-left: 20px;
+                    padding-inline-start: 20px;
                     text-transform: uppercase;
-                    text-align: right;
+                    text-align: end;
 
                     @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 192dpi), (min-resolution: 1.25dppx) {
                         background-image: url('../img/menu_2x.png');
@@ -2657,11 +2657,11 @@ div.modal-dialog {
                                 font-size: 20px;
                                 background-size: 24px;
                                 background-position: 0 4px;
-                                padding-left: 35px;
+                                padding-inline-start: 35px;
                             }
 
                             dl {
-                                padding-left: 35px;
+                                padding-inline-start: 35px;
                             }
                         }
                     }
@@ -2675,19 +2675,19 @@ div.modal-dialog {
 
             .header {
                 .logo {
-                    padding-left: 10px;
+                    padding-inline-start: 10px;
                 }
 
                 .statepadding {
-                    padding-right: 50px;
+                    padding-inline-end: 50px;
                 }
 
                 .state {
-                    margin-left: 10px;
+                    margin-inline-start: 10px;
                 }
 
                 .menubutton {
-                    margin-right: 5px;
+                    margin-inline-end: 5px;
                 }
             }
 
@@ -2702,7 +2702,7 @@ div.modal-dialog {
 
                         .steps-legend {
                             list-style: decimal;
-                            padding-left: 20px;
+                            padding-inline-start: 20px;
                             border-bottom: 1px solid #eee;
                             margin-bottom: 30px;
                             padding-bottom: 20px;
@@ -2711,12 +2711,12 @@ div.modal-dialog {
                                 float: none;
                                 font-weight: 500;
                                 width: auto !important;
-                                padding-right: 0 !important;
+                                padding-inline-end: 0 !important;
                             }
                         }
 
                         .steps-boxes {
-                            padding-left: 0;
+                            padding-inline-start: 0;
                         }
 
                         form.styled {
@@ -2739,7 +2739,7 @@ div.modal-dialog {
                             }
 
                             .tools {
-                                padding-left: 0 !important;
+                                padding-inline-start: 0 !important;
                             }
 
                             .input.checkbox.multiple {
@@ -2748,7 +2748,7 @@ div.modal-dialog {
                                 input,
                                 label {
                                     display: block !important;
-                                    float: left !important;
+                                    float: inline-start !important;
                                     line-height: normal;
                                 }
 
@@ -2875,7 +2875,7 @@ div.modal-dialog {
                 position: static;
                 padding: 15px;
                 line-height: normal;
-                text-align: left;
+                text-align: start;
                 box-sizing: border-box;
 
                 * {
@@ -2885,16 +2885,16 @@ div.modal-dialog {
                 }
 
                 .about-footer {
-                    padding-right: 0;
+                    padding-inline-end: 0;
                     display: block;
 
                     span {
-                        padding-left: 0;
+                        padding-inline-start: 0;
                         padding-bottom: 5px;
                     }
 
                     li {
-                        padding-left: 0;
+                        padding-inline-start: 0;
                         float: none;
                         display: inline-block;
                         height: 32px;
@@ -2942,7 +2942,7 @@ div.modal-dialog {
 
 @media (max-width: 580px) {
     .advancedentry .longdescription {
-        margin-left: 0;
+        margin-inline-start: 0;
     }
 }
 
@@ -2959,23 +2959,23 @@ div.modal-dialog {
         .container {
             .header {
                 .logo {
-                    padding-left: 5px;
+                    padding-inline-start: 5px;
                 }
 
                 .menubutton {
-                    margin-right: 5px;
+                    margin-inline-end: 5px;
                 }
 
                 .state {
-                    margin-left: 5px;
+                    margin-inline-start: 5px;
                 }
 
                 .statepadding {
-                    padding-right: 40px;
+                    padding-inline-end: 40px;
                 }
 
                 .menubutton {
-                    padding-left: 10px;
+                    padding-inline-start: 10px;
                 }
             }
 
@@ -3041,9 +3041,9 @@ div.modal-dialog {
         .container {
             .header {
                 .menubutton {
-                    margin-right: 0px;
-                    padding-left: 0px;
-                    padding-right: 40px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 0px;
+                    padding-inline-end: 40px;
 
                     span {
                         display: none;
@@ -3082,7 +3082,7 @@ div.modal-dialog {
                 }
 
                 .action-icons-small {
-                    clear: right;
+                    clear: inline-end;
                     margin-top: 0px;
                 }
             }
