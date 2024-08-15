@@ -218,7 +218,7 @@ wait-area {
     }
 
     .one {
-        border-right: 1px solid @border;
+        border-inline-end: 1px solid @border;
         grid-column: 1;
         grid-row: 1;
     }
@@ -380,8 +380,8 @@ ul.tabs {
 ul.notification {
     position: fixed;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
+    inset-inline-start: 0px;
+    inset-inline-end: 0px;
     margin: auto;
     width: 480px;
 }
@@ -642,8 +642,8 @@ body {
             height: 70px;
             position: fixed;
             top: 0px;
-            left: 0px;
-            right: 0px;
+            inset-inline-start: 0px;
+            inset-inline-end: 0px;
             z-index: 100;
 
             a {
@@ -717,7 +717,7 @@ body {
 
                 .buttons {
                     position: absolute;
-                    right: 0px;
+                    inset-inline-end: 0px;
                     top: 0px;
                     bottom: 0px;
                     width: 26px;
@@ -760,7 +760,7 @@ body {
                     position: absolute;
                     top: 0px;
                     bottom: 0px;
-                    left: 0px;
+                    inset-inline-start: 0px;
                     background: fade(@hColor, 25%);
                     z-index: 5;
                 }
@@ -1319,12 +1319,12 @@ body {
                 div.add,
                 div.restore {
                     --legends-width: 700px;
-                    --legends-padding-left: calc(calc(700px - var(--legends-width)) / 2);
+                    --legends-padding-inline-start: calc(calc(700px - var(--legends-width)) / 2);
                     --circle-width: 43px;
                     --step-width: calc(var(--legends-width) / var(--legends-steps));
 
                     .steps {
-                        margin-inline-start: calc(calc(calc(var(--step-width) - var(--circle-width)) / 2) + var(--legends-padding-left));
+                        margin-inline-start: calc(calc(calc(var(--step-width) - var(--circle-width)) / 2) + var(--legends-padding-inline-start));
 
                         .step {
                             padding-inline-start: calc(var(--step-width) - var(--circle-width));
@@ -1337,7 +1337,7 @@ body {
                     }
 
                     .steps-legend {
-                        padding-inline-start: var(--legends-padding-left);
+                        padding-inline-start: var(--legends-padding-inline-start);
 
                         li {
                             width: var(--step-width);
@@ -1695,7 +1695,7 @@ body {
                             a.button {
                                 position: absolute;
                                 top: 0;
-                                right: 0;
+                                inset-inline-end: 0;
                                 padding: 7px 12px 8px;
                             }
                         }
@@ -1786,8 +1786,8 @@ body {
                     }
 
                     .contextmenu {
-                        left: auto;
-                        right: 0;
+                        inset-inline-start: auto;
+                        inset-inline-end: 0;
                         top: auto;
                     }
 
@@ -1994,8 +1994,8 @@ div.connection-lost,
 div.modal-dialog {
     position: fixed;
     top: 0px;
-    left: 0px;
-    right: 0px;
+    inset-inline-start: 0px;
+    inset-inline-end: 0px;
     bottom: 0px;
     margin: auto;
 }
@@ -2138,7 +2138,7 @@ div.modal-dialog {
         }
 
         .tooltipped-w:after {
-            right: 100%;
+            inset-inline-end: 100%;
             bottom: 50%;
             margin-inline-end: 5px;
             -webkit-transform: translateY(50%);
@@ -2149,9 +2149,9 @@ div.modal-dialog {
         .tooltipped-w:before {
             top: 50%;
             bottom: 50%;
-            left: -5px;
+            inset-inline-start: -5px;
             margin-top: -5px;
-            border-left-color: rgba(0, 0, 0, 0.8)
+            border-inline-start-color: rgba(0, 0, 0, 0.8)
         }
     }
 }
@@ -2612,21 +2612,21 @@ div.modal-dialog {
                     position: fixed;
                     background: none repeat scroll 0 0 white;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-                    left: 10px;
+                    inset-inline-start: 10px;
                     padding: 20px;
                     top: 60px;
                 }
 
                 .mainmenu.mobile-open {
                     display: block;
-                    left: auto;
-                    right: 0;
+                    inset-inline-start: auto;
+                    inset-inline-end: 0;
                     top: 0;
                     z-index: 1000;
                 }
 
                 .contextmenu {
-                    left: 0;
+                    inset-inline-start: 0;
                     top: auto;
                 }
 
@@ -2797,7 +2797,7 @@ div.modal-dialog {
 
                                 a.button {
                                     padding: 7px 10px;
-                                    right: 1px;
+                                    inset-inline-end: 1px;
                                     top: 9px;
                                 }
                             }
